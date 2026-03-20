@@ -1,0 +1,61 @@
+.sidebar {
+  width: 160px;
+  flex-shrink: 0;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  padding: 8px 12px;
+  font-size: 11px;
+  color: var(--fg-muted);
+  border-bottom: 1px solid var(--border);
+  letter-spacing: 2px;
+}
+
+.list {
+  list-style: none;
+  flex: 1;
+  overflow-y: auto;
+  padding: 4px 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--fg-muted);
+  user-select: none;
+}
+
+.item:hover {
+  color: var(--fg-dim);
+  background: var(--hover);
+}
+
+.active {
+  color: var(--fg) !important;
+}
+
+.prefix {
+  width: 10px;
+  flex-shrink: 0;
+}
+
+.name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.count {
+  font-size: 11px;
+  color: var(--fg-muted);
+  flex-shrink: 0;
+}

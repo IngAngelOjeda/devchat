@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--border);
+  padding: 8px 16px;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.prompt {
+  color: var(--fg-dim);
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--fg);
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  caret-color: var(--fg);
+  min-width: 0;
+}

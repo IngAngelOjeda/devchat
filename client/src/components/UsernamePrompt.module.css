@@ -1,0 +1,52 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  animation: fadeIn 0.2s ease;
+}
+
+.title {
+  font-size: 13px;
+  color: var(--fg);
+  letter-spacing: 6px;
+}
+
+.inputRow {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.prompt {
+  color: var(--fg-dim);
+  white-space: nowrap;
+}
+
+.input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--fg-muted);
+  color: var(--fg);
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  caret-color: var(--fg);
+  padding: 2px 4px;
+  width: 160px;
+}
+
+.input:focus {
+  border-bottom-color: var(--fg-dim);
+}
+
+.hint  { color: var(--fg-muted); font-size: 12px; }
+.error { color: var(--fg-dim);   font-size: 12px; }
