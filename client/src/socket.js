@@ -1,6 +1,8 @@
 import { io } from 'socket.io-client';
 
-const socket = io({
+const SERVER_URL = import.meta.env.VITE_SERVER_URL || '';
+
+const socket = io(SERVER_URL, {
   autoConnect: false,
   transports: ['websocket', 'polling'],
 });
